@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --color-one: #000000;
+  --color-two: #F3EFE0;
+  --color-three: #C0EEF2;
+  --color-four: #E6DDC4;
+
+  /*fonte*/
+
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'montserrat', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--color-one);
+  color: var(--color-two);
+}
+
+.navigation{
+  padding: 2% 0% 0% 15%;
+}
+.navigation__menu{
+  display: flex;
+  gap: 80px;
+}
+
+.navigation__menu__link{
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-three);
+  text-decoration: none;
+}
+
+.logo__dorcas {
+  width: 250px;
+  height: 90px;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.presentation{
+  padding: 8% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presentation__content__title{
+  color: var(--color-three);
+  font-size: 2.35rem;
+}
+
+.presentation__content__paragrafe{
+  color: var(--color-four);
+  font-size: 1.5rem;
+}
+
+.presentation__content{
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.presentation__link{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.presentation__link__subtitle{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.presentation__link__link{
+  border: 2px solid var(--color-three);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-two);
+    font-family: var(--color-four);
+}
+.presentation__link__link:hover{
+  background-color: #393939;
+}
+
+@media (max-width: 1200px) {
+  .logo__dorcas{
+      width: 250px;
+      height: 90px;
+      position: absolute;
+      top: 8%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .navigation{
+      padding: 2% 0% 0% 15%;
+    }
+}
+
+
+
+
+
+
